@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="teste">Eventos Acadêmicos</h1>
+    <form method="post">
+        <input name="nome" placeholder="Nome" required>
+        <input name="data" placeholder="Data" required>
+        <input name="local" placeholder="Local" required>
+        <button type="submit">Cadastrar Evento</button>
+    </form>
+    <ul>
+        {% for e in eventos %}
+            <li>{{ e.nome }} - {{ e.data }} - {{ e.local }}</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>

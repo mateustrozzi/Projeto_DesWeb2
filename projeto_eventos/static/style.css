@@ -1,0 +1,30 @@
+h1{
+    color: #62ff00;
+    text-align: center;
+    font-size: 32pt;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+
+}
+h1.teste:hover{
+    cursor: pointer;
+    text-shadow: 2px 0px 24px #62ff00;
+    transform: scale(1.01);    /* Dá um leve zoom de 5% no título */
+    transition: all 0.3s ease;
+}
+
+body{
+    background-color: #222;
+}
+
+li{
+    color: #62ff00;
+    text-decoration: none;
+    }
+
+form{{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	gap: 12px;
+}
