@@ -2,17 +2,17 @@
 
 ## Projeto de backend em python
 
-# Desenvolvimento Web II
+### Desenvolvimento Web II
 
-No windows:
+#### No windows:
 
 execute o arquivo setup.bat
 
-No linux:
+#### No linux:
 
-# caso ele não tenha permissões de execução
+##### caso ele não tenha permissões de execução
 chmod +x setup.sh 
-# Após alterar as permissões
+##### Após alterar as permissões
 ./setup.sh
 
 
