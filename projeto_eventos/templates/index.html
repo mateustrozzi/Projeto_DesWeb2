@@ -9,16 +9,18 @@
 <body>
     <h1 class="teste">Eventos Acadêmicos</h1>
     <form method="post">
-        <input name="nome" placeholder="Nome" required>
-        <input name="data" placeholder="Data" required>
+        <input name="nome" placeholder="Nome do Evento" required>
+        <input name="data" placeholder="Data (ex: 2026-10-15)" required>
         <input name="local" placeholder="Local" required>
+        <input name="vagas" type="number" placeholder="Vagas" min="1" required>
         <button type="submit">Cadastrar Evento</button>
     </form>
     <ul>
         {% for e in eventos %}
-            <li>{{ e.nome }} - {{ e.data }} - {{ e.local }}</li>
+            <li><strong>{{ e.nome }}</strong> - {{ e.data }} - {{ e.local }} ({{ e.vagas }} vagas)</li>
+        {% else %}
+            <li>Nenhum evento cadastrado ainda.</li>
         {% endfor %}
     </ul>
-    
 </body>
 </html>
