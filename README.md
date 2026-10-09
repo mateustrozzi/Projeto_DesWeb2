@@ -4,6 +4,13 @@
 
 ### Desenvolvimento Web II
 
+## Necessário GIT instalado
+
+### Clonar a aplicação
+git clone https://github.com/mateustrozzi/Projeto_DesWeb2.git
+
+cd Projeto_DesWeb2/
+
 #### No windows:
 
 execute o arquivo setup.bat
@@ -14,6 +21,10 @@ execute o arquivo setup.bat
 chmod +x setup.sh 
 ##### Após alterar as permissões
 ./setup.sh
+
+
+
+
 
 
 
